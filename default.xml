@@ -31,7 +31,7 @@
   <project path="bionic" name="android_bionic" remote="omnirom" revision="android-4.4" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
-  <project path="bootable/recovery" name="android_bootable_recovery" remote="omnirom" revision="android-4.4"/>
+  <project path="bootable/recovery" name="XperiaOmni/android_bootable_recovery" remote="github" revision="cm-11.0"/>
   <project path="cts" name="platform/cts" groups="cts" />
   <project path="dalvik" name="android_dalvik" remote="omnirom" revision="android-4.4" />
   <project path="developers/build" name="platform/developers/build" />
@@ -64,7 +64,9 @@
   <project path="external/arduino" name="platform/external/arduino" />
   <project path="external/bison" name="platform/external/bison" groups="pdk" />
   <project path="external/blktrace" name="platform/external/blktrace" />
-  <project path="external/bluetooth/bluedroid" name="android_external_bluetooth_bluedroid" remote="omnirom" revision="android-4.4" />
+  <project path="external/bluetooth/bluez" name="XperiaOmni/android_external_bluetooth_bluez" remote="github" revision="cm-11.0" />
+  <project path="external/bluetooth/glib" name="aosp-bluez.glib" remote="googlecode" revision="master" groups="pdk" />
+  <project path="external/bluetooth/sbc" name="bluetooth/sbc" remote="kernel"     revision="master" groups="pdk" />
   <project path="external/bouncycastle" name="platform/external/bouncycastle" />
   <project path="external/bsdiff" name="platform/external/bsdiff" groups="pdk" />
   <project path="external/busybox" name="android_external_busybox" remote="omnirom" revision="android-4.4" />
@@ -251,15 +253,15 @@
   <project path="external/yaffs2" name="platform/external/yaffs2" groups="pdk" />
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zxing" name="platform/external/zxing" />
-  <project path="frameworks/av" name="android_frameworks_av" remote="omnirom" revision="android-4.4" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="omnirom" revision="android-4.4" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="github" revision="android-4.4" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="github" revision="android-4.4" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
   <project path="frameworks/ex" name="android_frameworks_ex" remote="omnirom" revision="android-4.4" />
   <project path="frameworks/mff" name="platform/frameworks/mff" />
   <project path="frameworks/ml" name="platform/frameworks/ml" />
-  <project path="frameworks/native" name="android_frameworks_native" remote="omnirom" revision="android-4.4" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="github" revision="android-4.4" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" />
   <project path="frameworks/opt/carddav" name="platform/frameworks/opt/carddav" />
   <project path="frameworks/opt/colorpicker" name="android_frameworks_opt_colorpicker" remote="omnirom" revision="android-4.4" />
@@ -284,8 +286,8 @@
   <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" remote="omnirom" revision="android-4.4" />
   <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="omnirom" revision="android-4.4" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
-  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="omnirom" revision="android-4.4" />
-  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="omnirom" revision="android-4.4" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="github" revision="android-4.4" />
+  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="github" revision="android-4.4" />
   <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="omnirom" revision="android-4.4" />
   <project path="hardware/qcom/audio-caf" name="android_hardware_qcom_audio-caf" remote="omnirom" revision="android-4.4" />
   <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="omnirom" revision="android-4.4" />
@@ -431,7 +433,7 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" />
-  <project path="system/core" name="android_system_core" remote="omnirom" revision="android-4.4" />
+  <project path="system/core" name="android_system_core" remote="github" revision="android-4.4" />
   <project path="system/extras" name="android_system_extras" remote="omnirom" revision="android-4.4" />
   <project path="system/media" name="android_system_media" groups="pdk" remote="omnirom" revision="android-4.4" />
   <project path="system/netd" name="android_system_netd" groups="pdk" remote="omnirom" revision="android-4.4" />
@@ -450,4 +452,13 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="vendor/omni" name="android_vendor_omni" remote="omnirom" revision="android-4.4" />
   <project path="packages/apps/MonthCalendarWidget" name="android_packages_apps_MonthCalendarWidget" remote="omnirom" revision="android-4.4" />
+
+  <project path="device/sony/kumquat" name="XperiaOmni/android_device_sony_kumquat" remote="github" revision="android-4.4" />
+  <project path="device/sony/lotus" name="XperiaOmni/android_device_sony_lotus" remote="github" revision="android-4.4" />
+  <project path="device/sony/nypon" name="XperiaOmni/android_device_sony_nypon" remote="github" revision="android-4.4" />
+  <project path="device/sony/pepper" name="XperiaOmni/android_device_sony_pepper" remote="github" revision="android-4.4" />
+  <project path="device/sony/montblanc-common" name="XperiaOmni/android_device_sony_montblanc-common" remote="github" revision="android-4.4" />
+  <project path="hardware/ste-sony" name="XperiaOmni/android_hardware_ste-sony" remote="github" revision="cm-11.0" />
+  <project path="kernel/sony/u8500" name="XperiaOmni/android_kernel_sony_u8500" remote="github" revision="cm-11.0" />
+
 </manifest>
