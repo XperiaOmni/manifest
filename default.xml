@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="xda"
-           fetch=".." />
-
   <remote  name="github"
            fetch="https://github.com/" />
 
@@ -461,5 +458,4 @@
   <project path="device/sony/montblanc-common" name="XperiaOmni/android_device_sony_montblanc-common" remote="github" revision="android-4.4" />
   <project path="hardware/ste-sony" name="XperiaOmni/android_hardware_ste-sony" remote="github" revision="cm-11.0" />
   <project path="kernel/sony/u8500" name="XperiaOmni/android_kernel_sony_u8500" remote="github" revision="cm-11.0" />
-
 </manifest>
