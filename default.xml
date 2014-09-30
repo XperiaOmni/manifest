@@ -9,7 +9,7 @@
            review="android-review.googlesource.com" />
 
   <remote name="kernel"
-          fetch="git://git.kernel.org/pub/scm/" />
+          fetch="http://git.kernel.org/pub/scm/" />
 
   <remote name="googlecode"
           fetch="https://code.google.com/p/" />
